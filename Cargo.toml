@@ -1,0 +1,56 @@
+[package]
+name = "screenphoto"
+version = "0.1.0"
+edition = "2024"
+rust-version = "1.88"
+description = "把屏幕截图处理成手机拍屏照片，提供命令行工具、Agent Skill 和 Rust 库。"
+license = "MIT"
+repository = "https://github.com/pjx1314/screenphoto"
+default-run = "screenphoto"
+include = [
+    "/src/**", "/tests/**", "/build.rs", "/Cargo.lock", "/.cargo/config.toml",
+    "/README.md", "/AGENTS.md", "/SKILL.md", "/LICENSE",
+    "/docs/*.md", "/docs/*.json", "/scripts/*.sh", "/scripts/*.ps1",
+    "/samples/*.jpg",
+    "/samples/_ref/*.jpg",
+]
+
+[[bin]]
+name = "screenphoto"
+path = "src/main.rs"
+required-features = ["cli"]
+
+[[bin]]
+name = "screenphoto-dev"
+path = "src/bin/screenphoto-dev.rs"
+required-features = ["dev-tools"]
+
+[[test]]
+name = "native_cli"
+path = "tests/native_cli.rs"
+required-features = ["cli"]
+
+[features]
+default = ["cli"]
+cli = ["dep:clap", "dep:serde_json", "dep:same-file", "dep:windows-sys"]
+dev-tools = ["dep:clap", "dep:serde_json", "dep:same-file", "dep:sha2", "dep:zip", "dep:font8x8", "dep:serde"]
+
+[dependencies]
+clap = { version = "4.5", features = ["derive"], optional = true }
+getrandom = "0.3"
+image = { version = "0.25.10", default-features = false, features = ["jpeg", "png"] }
+jpeg-encoder = "0.7"
+same-file = { version = "1.0", optional = true }
+serde = { version = "1.0", features = ["derive"], optional = true }
+serde_json = { version = "1.0", optional = true }
+sha2 = { version = "0.10", optional = true }
+zip = { version = "2.4", default-features = false, features = ["deflate"], optional = true }
+font8x8 = { version = "0.3", optional = true }
+
+[target.'cfg(windows)'.dependencies]
+windows-sys = { version = "0.61", features = ["Win32_Foundation", "Win32_Graphics_Gdi", "Win32_Storage_FileSystem", "Win32_UI_WindowsAndMessaging", "Win32_UI_HiDpi"], optional = true }
+
+[profile.release]
+lto = "thin"
+codegen-units = 1
+strip = "symbols"

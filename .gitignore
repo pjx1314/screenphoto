@@ -1,0 +1,19 @@
+# 构建产物
+/target/
+/dist/
+/out/
+
+# 本地压缩包和包缓存
+*.crate
+
+# 编辑器与系统文件
+.idea/
+.vscode/
+.DS_Store
+Thumbs.db
+
+# 日志
+*.log
+
+# 本地 lint 历史
+.brooks-lint-history.json

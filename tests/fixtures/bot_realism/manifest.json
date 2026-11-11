@@ -1,0 +1,808 @@
+{
+  "schema": 1,
+  "note": "Synthetic inputs only, no real chat data. Every key region must keep at least 80 levels of grayscale range.",
+  "image_count": 12,
+  "images": [
+    {
+      "file": "01-light-chat.png",
+      "kind": "light_chat",
+      "description": "light-theme chat, portrait",
+      "format": "PNG",
+      "mode": "RGB",
+      "size": [
+        1080,
+        1920
+      ],
+      "long": false,
+      "key_regions": [
+        {
+          "name": "header_title",
+          "box": [
+            168,
+            99,
+            380,
+            138
+          ]
+        },
+        {
+          "name": "header_subtitle",
+          "box": [
+            168,
+            145,
+            381,
+            168
+          ]
+        },
+        {
+          "name": "bubble_deploy",
+          "box": [
+            36,
+            236,
+            652,
+            336
+          ]
+        },
+        {
+          "name": "bubble_ack",
+          "box": [
+            428,
+            364,
+            1044,
+            435
+          ]
+        },
+        {
+          "name": "bubble_manifest",
+          "box": [
+            36,
+            463,
+            664,
+            563
+          ]
+        },
+        {
+          "name": "image_caption",
+          "box": [
+            56,
+            964,
+            345,
+            991
+          ]
+        },
+        {
+          "name": "bubble_sizes",
+          "box": [
+            36,
+            1117,
+            522,
+            1188
+          ]
+        },
+        {
+          "name": "bubble_reply",
+          "box": [
+            428,
+            1212,
+            1044,
+            1312
+          ]
+        },
+        {
+          "name": "input_placeholder",
+          "box": [
+            56,
+            1842,
+            175,
+            1871
+          ]
+        },
+        {
+          "name": "send_button",
+          "box": [
+            950,
+            1814,
+            1026,
+            1890
+          ]
+        }
+      ],
+      "sha256": "27d1c1492da5b2011dbb848e36edda96dbdd63531b4aa2939f556e1e792e2dfd"
+    },
+    {
+      "file": "02-dark-chat.png",
+      "kind": "dark_chat",
+      "description": "dark-theme chat, portrait",
+      "format": "PNG",
+      "mode": "RGB",
+      "size": [
+        1080,
+        1920
+      ],
+      "long": false,
+      "key_regions": [
+        {
+          "name": "header_title",
+          "box": [
+            168,
+            99,
+            380,
+            138
+          ]
+        },
+        {
+          "name": "header_subtitle",
+          "box": [
+            168,
+            145,
+            381,
+            168
+          ]
+        },
+        {
+          "name": "bubble_deploy",
+          "box": [
+            36,
+            236,
+            652,
+            336
+          ]
+        },
+        {
+          "name": "bubble_ack",
+          "box": [
+            428,
+            364,
+            1044,
+            435
+          ]
+        },
+        {
+          "name": "bubble_manifest",
+          "box": [
+            36,
+            463,
+            664,
+            563
+          ]
+        },
+        {
+          "name": "image_caption",
+          "box": [
+            56,
+            964,
+            345,
+            991
+          ]
+        },
+        {
+          "name": "bubble_sizes",
+          "box": [
+            36,
+            1117,
+            522,
+            1188
+          ]
+        },
+        {
+          "name": "bubble_reply",
+          "box": [
+            428,
+            1212,
+            1044,
+            1312
+          ]
+        },
+        {
+          "name": "input_placeholder",
+          "box": [
+            56,
+            1842,
+            175,
+            1871
+          ]
+        },
+        {
+          "name": "send_button",
+          "box": [
+            950,
+            1814,
+            1026,
+            1890
+          ]
+        }
+      ],
+      "sha256": "244498e944134fec3c95d8d66963b19d1eadd48e747093cfeb6da590e5b8db02"
+    },
+    {
+      "file": "03-code.png",
+      "kind": "code",
+      "description": "dark code editor, landscape",
+      "format": "PNG",
+      "mode": "RGB",
+      "size": [
+        1600,
+        900
+      ],
+      "long": false,
+      "key_regions": [
+        {
+          "name": "code_header",
+          "box": [
+            116,
+            72,
+            1320,
+            282
+          ]
+        },
+        {
+          "name": "settings_class",
+          "box": [
+            116,
+            436,
+            1100,
+            542
+          ]
+        },
+        {
+          "name": "byte_api",
+          "box": [
+            116,
+            566,
+            1400,
+            672
+          ]
+        },
+        {
+          "name": "status_bar",
+          "box": [
+            0,
+            862,
+            1600,
+            900
+          ]
+        }
+      ],
+      "sha256": "27eccd009e6ff544b84cf7682c4febe016dd143e2f8ccdb37f5b38a94e6b2a46"
+    },
+    {
+      "file": "04-web-small-text.png",
+      "kind": "web_small_text",
+      "description": "light article with small type and table",
+      "format": "PNG",
+      "mode": "RGB",
+      "size": [
+        1000,
+        1800
+      ],
+      "long": false,
+      "key_regions": [
+        {
+          "name": "article_title",
+          "box": [
+            86,
+            114,
+            453,
+            160
+          ]
+        },
+        {
+          "name": "article_meta",
+          "box": [
+            86,
+            166,
+            328,
+            189
+          ]
+        },
+        {
+          "name": "lead_paragraph",
+          "box": [
+            90,
+            212,
+            910,
+            262
+          ]
+        },
+        {
+          "name": "small_body",
+          "box": [
+            90,
+            329,
+            910,
+            373
+          ]
+        },
+        {
+          "name": "settings_table",
+          "box": [
+            90,
+            395,
+            910,
+            623
+          ]
+        },
+        {
+          "name": "footer_link",
+          "box": [
+            86,
+            669,
+            306,
+            689
+          ]
+        }
+      ],
+      "sha256": "51c3396196552e500592c56c1d141c52b795d2bb1273103345a499505b0b39be"
+    },
+    {
+      "file": "05-avatar-emoji.png",
+      "kind": "avatar_emoji",
+      "description": "RGBA avatars and drawn emoji",
+      "format": "PNG",
+      "mode": "RGBA",
+      "size": [
+        900,
+        900
+      ],
+      "long": false,
+      "key_regions": [
+        {
+          "name": "avatar_1",
+          "box": [
+            138,
+            178,
+            302,
+            342
+          ]
+        },
+        {
+          "name": "avatar_2",
+          "box": [
+            368,
+            178,
+            532,
+            342
+          ]
+        },
+        {
+          "name": "avatar_3",
+          "box": [
+            598,
+            178,
+            762,
+            342
+          ]
+        },
+        {
+          "name": "emoji_1",
+          "box": [
+            118,
+            538,
+            262,
+            682
+          ]
+        },
+        {
+          "name": "emoji_2",
+          "box": [
+            298,
+            538,
+            442,
+            682
+          ]
+        },
+        {
+          "name": "emoji_3",
+          "box": [
+            478,
+            538,
+            622,
+            682
+          ]
+        },
+        {
+          "name": "emoji_4",
+          "box": [
+            658,
+            538,
+            802,
+            682
+          ]
+        }
+      ],
+      "sha256": "0a087bf6490317c25fcd3ad3e980fb673cb096a4925a2e47cb5ae8a6964abb94"
+    },
+    {
+      "file": "06-photo.jpg",
+      "kind": "photo",
+      "description": "synthetic landscape photo, JPEG",
+      "format": "JPEG",
+      "mode": "RGB",
+      "size": [
+        1440,
+        1080
+      ],
+      "long": false,
+      "key_regions": [
+        {
+          "name": "sun",
+          "box": [
+            937,
+            225,
+            1135,
+            423
+          ]
+        },
+        {
+          "name": "mountain_silhouette",
+          "box": [
+            259,
+            302,
+            720,
+            583
+          ]
+        },
+        {
+          "name": "water_reflection",
+          "box": [
+            966,
+            646,
+            1106,
+            886
+          ]
+        }
+      ],
+      "sha256": "4d1077cdc2d39a8eca48e46f3b9fe57efc1d3bb4757634ba7e0ffae4f36c6767"
+    },
+    {
+      "file": "07-thin-lines.png",
+      "kind": "thin_lines",
+      "description": "1 px hairlines, odd landscape",
+      "format": "PNG",
+      "mode": "RGB",
+      "size": [
+        1281,
+        721
+      ],
+      "long": false,
+      "key_regions": [
+        {
+          "name": "horizontal_hairlines",
+          "box": [
+            40,
+            96,
+            760,
+            300
+          ]
+        },
+        {
+          "name": "vertical_hairlines",
+          "box": [
+            820,
+            96,
+            1240,
+            640
+          ]
+        },
+        {
+          "name": "pixel_checker",
+          "box": [
+            80,
+            360,
+            700,
+            640
+          ]
+        }
+      ],
+      "sha256": "836c56121e26d2fcf67faa78c56690527fa546657126309e38cbb967e3d3ede4"
+    },
+    {
+      "file": "08-dashboard-odd.png",
+      "kind": "dashboard",
+      "description": "dense dark dashboard, odd landscape",
+      "format": "PNG",
+      "mode": "RGB",
+      "size": [
+        1333,
+        777
+      ],
+      "long": false,
+      "key_regions": [
+        {
+          "name": "metrics_table",
+          "box": [
+            30,
+            240,
+            790,
+            392
+          ]
+        },
+        {
+          "name": "bar_chart",
+          "box": [
+            840,
+            280,
+            1280,
+            520
+          ]
+        },
+        {
+          "name": "legend",
+          "box": [
+            30,
+            616,
+            600,
+            646
+          ]
+        }
+      ],
+      "sha256": "5e984ab9d99d63bbcfad09e903a90f5a1031e36e820481a434e5a02b256f4c9b"
+    },
+    {
+      "file": "09-portrait-odd.png",
+      "kind": "portrait",
+      "description": "mobile feed, odd portrait",
+      "format": "PNG",
+      "mode": "RGB",
+      "size": [
+        777,
+        1333
+      ],
+      "long": false,
+      "key_regions": [
+        {
+          "name": "post_title",
+          "box": [
+            44,
+            256,
+            366,
+            285
+          ]
+        },
+        {
+          "name": "post_body",
+          "box": [
+            48,
+            296,
+            729,
+            340
+          ]
+        },
+        {
+          "name": "post_image",
+          "box": [
+            48,
+            430,
+            729,
+            650
+          ]
+        },
+        {
+          "name": "post_caption",
+          "box": [
+            44,
+            665,
+            228,
+            687
+          ]
+        },
+        {
+          "name": "post_actions",
+          "box": [
+            44,
+            812,
+            268,
+            838
+          ]
+        },
+        {
+          "name": "second_heading",
+          "box": [
+            44,
+            906,
+            166,
+            934
+          ]
+        },
+        {
+          "name": "second_body",
+          "box": [
+            48,
+            942,
+            729,
+            986
+          ]
+        }
+      ],
+      "sha256": "c8ca6a2cbd37d3bcc19004a1d6f2e0600ede38f26b3e386514e26e5e15de8c82"
+    },
+    {
+      "file": "10-grayscale.png",
+      "kind": "grayscale",
+      "description": "one-channel document",
+      "format": "PNG",
+      "mode": "L",
+      "size": [
+        1000,
+        1400
+      ],
+      "long": false,
+      "key_regions": [
+        {
+          "name": "page_header",
+          "box": [
+            0,
+            0,
+            1000,
+            90
+          ]
+        },
+        {
+          "name": "page_title",
+          "box": [
+            56,
+            133,
+            429,
+            174
+          ]
+        },
+        {
+          "name": "intro_paragraph",
+          "box": [
+            60,
+            190,
+            940,
+            240
+          ]
+        },
+        {
+          "name": "code_block",
+          "box": [
+            60,
+            268,
+            940,
+            518
+          ]
+        },
+        {
+          "name": "table_rows",
+          "box": [
+            60,
+            558,
+            940,
+            718
+          ]
+        }
+      ],
+      "sha256": "62fd0f5204887cf1eba3bbeb5cc04cf5e1ca427b189fb17b11cae2a574951988"
+    },
+    {
+      "file": "11-long.png",
+      "kind": "long",
+      "description": "4,800 px long page, key regions spread",
+      "format": "PNG",
+      "mode": "RGB",
+      "size": [
+        720,
+        4800
+      ],
+      "long": true,
+      "key_regions": [
+        {
+          "name": "top_header",
+          "box": [
+            20,
+            20,
+            700,
+            88
+          ]
+        },
+        {
+          "name": "section_01",
+          "box": [
+            24,
+            1116,
+            696,
+            1280
+          ]
+        },
+        {
+          "name": "section_02",
+          "box": [
+            24,
+            2316,
+            696,
+            2480
+          ]
+        },
+        {
+          "name": "section_03",
+          "box": [
+            24,
+            3516,
+            696,
+            3680
+          ]
+        },
+        {
+          "name": "bottom_footer",
+          "box": [
+            20,
+            4660,
+            700,
+            4780
+          ]
+        }
+      ],
+      "sha256": "4fa469879729b9585f74867883d05ea5833a4dcc9d4e1f7665e2439b28f409e6"
+    },
+    {
+      "file": "12-ui-chrome.png",
+      "kind": "ui_chrome",
+      "description": "browser chrome and tiny UI text, odd landscape",
+      "format": "PNG",
+      "mode": "RGB",
+      "size": [
+        1099,
+        799
+      ],
+      "long": false,
+      "key_regions": [
+        {
+          "name": "tab_title",
+          "box": [
+            36,
+            20,
+            300,
+            48
+          ]
+        },
+        {
+          "name": "address_text",
+          "box": [
+            36,
+            68,
+            1009,
+            96
+          ]
+        },
+        {
+          "name": "sidebar_active",
+          "box": [
+            24,
+            254,
+            180,
+            282
+          ]
+        },
+        {
+          "name": "stat_card",
+          "box": [
+            288,
+            330,
+            492,
+            420
+          ]
+        },
+        {
+          "name": "scrollbar_thumb",
+          "box": [
+            1083,
+            216,
+            1097,
+            424
+          ]
+        },
+        {
+          "name": "status_text",
+          "box": [
+            14,
+            763,
+            1079,
+            793
+          ]
+        }
+      ],
+      "sha256": "122b1329b338e8862c356f86addd2655892bb129183e56b568f6934db7078781"
+    }
+  ]
+}

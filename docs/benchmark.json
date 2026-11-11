@@ -1,0 +1,191 @@
+{
+  "contract": "render_bytes(data, seed) -> (jpeg, seed)",
+  "environment": {
+    "os": "linux",
+    "arch": "x86_64",
+    "cpu_count": 20,
+    "target": "x86_64-unknown-linux-gnu",
+    "version": "0.1.0",
+    "build_profile": "release"
+  },
+  "seed": 20261107,
+  "repeat": 10,
+  "rows": [
+    {
+      "input": "01-light-chat.png",
+      "input_sha256": "27d1c1492da5b2011dbb848e36edda96dbdd63531b4aa2939f556e1e792e2dfd",
+      "input_bytes": 72726,
+      "width": 1080,
+      "height": 1920,
+      "bytes": 390273,
+      "api": {
+        "n": 10,
+        "p50": 465.779,
+        "p95": 473.2,
+        "max": 473.272
+      }
+    },
+    {
+      "input": "02-dark-chat.png",
+      "input_sha256": "244498e944134fec3c95d8d66963b19d1eadd48e747093cfeb6da590e5b8db02",
+      "input_bytes": 72165,
+      "width": 1080,
+      "height": 1920,
+      "bytes": 327838,
+      "api": {
+        "n": 10,
+        "p50": 469.374,
+        "p95": 483.664,
+        "max": 488.02
+      }
+    },
+    {
+      "input": "03-code.png",
+      "input_sha256": "27eccd009e6ff544b84cf7682c4febe016dd143e2f8ccdb37f5b38a94e6b2a46",
+      "input_bytes": 82355,
+      "width": 1600,
+      "height": 900,
+      "bytes": 224494,
+      "api": {
+        "n": 10,
+        "p50": 310.929,
+        "p95": 330.591,
+        "max": 334.793
+      }
+    },
+    {
+      "input": "04-web-small-text.png",
+      "input_sha256": "51c3396196552e500592c56c1d141c52b795d2bb1273103345a499505b0b39be",
+      "input_bytes": 55156,
+      "width": 1000,
+      "height": 1800,
+      "bytes": 341217,
+      "api": {
+        "n": 10,
+        "p50": 390.293,
+        "p95": 456.028,
+        "max": 478.394
+      }
+    },
+    {
+      "input": "05-avatar-emoji.png",
+      "input_sha256": "0a087bf6490317c25fcd3ad3e980fb673cb096a4925a2e47cb5ae8a6964abb94",
+      "input_bytes": 23506,
+      "width": 900,
+      "height": 900,
+      "bytes": 153546,
+      "api": {
+        "n": 10,
+        "p50": 163.402,
+        "p95": 166.105,
+        "max": 167.368
+      }
+    },
+    {
+      "input": "06-photo.jpg",
+      "input_sha256": "4d1077cdc2d39a8eca48e46f3b9fe57efc1d3bb4757634ba7e0ffae4f36c6767",
+      "input_bytes": 224523,
+      "width": 1440,
+      "height": 1080,
+      "bytes": 241456,
+      "api": {
+        "n": 10,
+        "p50": 325.729,
+        "p95": 330.364,
+        "max": 331.93
+      }
+    },
+    {
+      "input": "07-thin-lines.png",
+      "input_sha256": "836c56121e26d2fcf67faa78c56690527fa546657126309e38cbb967e3d3ede4",
+      "input_bytes": 10503,
+      "width": 1281,
+      "height": 721,
+      "bytes": 229995,
+      "api": {
+        "n": 10,
+        "p50": 187.63,
+        "p95": 201.729,
+        "max": 203.733
+      }
+    },
+    {
+      "input": "08-dashboard-odd.png",
+      "input_sha256": "5e984ab9d99d63bbcfad09e903a90f5a1031e36e820481a434e5a02b256f4c9b",
+      "input_bytes": 34460,
+      "width": 1333,
+      "height": 777,
+      "bytes": 159064,
+      "api": {
+        "n": 10,
+        "p50": 210.972,
+        "p95": 212.796,
+        "max": 212.868
+      }
+    },
+    {
+      "input": "09-portrait-odd.png",
+      "input_sha256": "c8ca6a2cbd37d3bcc19004a1d6f2e0600ede38f26b3e386514e26e5e15de8c82",
+      "input_bytes": 41428,
+      "width": 777,
+      "height": 1333,
+      "bytes": 198645,
+      "api": {
+        "n": 10,
+        "p50": 214.833,
+        "p95": 364.058,
+        "max": 483.11
+      }
+    },
+    {
+      "input": "10-grayscale.png",
+      "input_sha256": "62fd0f5204887cf1eba3bbeb5cc04cf5e1ca427b189fb17b11cae2a574951988",
+      "input_bytes": 20835,
+      "width": 1000,
+      "height": 1400,
+      "bytes": 253382,
+      "api": {
+        "n": 10,
+        "p50": 302.884,
+        "p95": 313.442,
+        "max": 316.085
+      }
+    },
+    {
+      "input": "11-long.png",
+      "input_sha256": "4fa469879729b9585f74867883d05ea5833a4dcc9d4e1f7665e2439b28f409e6",
+      "input_bytes": 67856,
+      "width": 288,
+      "height": 1920,
+      "bytes": 106083,
+      "api": {
+        "n": 10,
+        "p50": 137.599,
+        "p95": 142.772,
+        "max": 146.583
+      }
+    },
+    {
+      "input": "12-ui-chrome.png",
+      "input_sha256": "122b1329b338e8862c356f86addd2655892bb129183e56b568f6934db7078781",
+      "input_bytes": 36025,
+      "width": 1099,
+      "height": 799,
+      "bytes": 167355,
+      "api": {
+        "n": 10,
+        "p50": 174.954,
+        "p95": 177.898,
+        "max": 178.965
+      }
+    }
+  ],
+  "pooled": {
+    "api": {
+      "n": 120,
+      "p50": 300.627,
+      "p95": 471.133,
+      "max": 488.02
+    }
+  }
+}

@@ -1,0 +1,58 @@
+name: ci
+
+on:
+  push:
+  pull_request:
+  workflow_dispatch:
+  workflow_call:
+
+permissions:
+  contents: read
+
+# The ci- prefix keeps this group distinct from caller groups such as release-*,
+# so a called run can never cancel the workflow that called it.
+concurrency:
+  group: ci-${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  test:
+    name: test ${{ matrix.os }}
+    timeout-minutes: 30
+    strategy:
+      fail-fast: false
+      matrix:
+        os:
+          - ubuntu-latest
+          - windows-latest
+    runs-on: ${{ matrix.os }}
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Add Rust components
+        run: rustup component add clippy rustfmt
+
+      - name: Check formatting
+        run: cargo fmt --all -- --check
+
+      - name: Run Clippy
+        run: cargo clippy --locked --all-targets --all-features -- -D warnings
+
+      - name: Run tests
+        run: cargo test --locked --all-features
+
+      - name: Check library-only build
+        if: runner.os == 'Linux'
+        run: cargo check --locked --no-default-features --lib
+
+      - name: Run library-only API tests
+        if: runner.os == 'Linux'
+        run: cargo test --locked --no-default-features --test native_api
+
+      - name: Verify corpus
+        if: runner.os == 'Linux'
+        run: cargo run --locked --features dev-tools --bin screenphoto-dev -- verify-corpus
+
+      - name: Check crate package
+        if: runner.os == 'Linux'
+        run: cargo package --locked
